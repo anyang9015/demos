@@ -17,6 +17,7 @@ import com.dingxianginc.ctucommon.client.model.CaptchaResponse;
 public class CaptchaDemo {
 
     public static void main(String[] args) throws Exception{
+        String hehe  = "hehe";
         String appId = "appId";
         String appSecret = "appSecret";
         String token = "前端传入的验证码token";
@@ -35,7 +36,7 @@ public class CaptchaDemo {
         } else {
             /**token验证失败，业务系统可以直接阻断该次请求或者继续弹验证码**/
         }
-
+        System.out.println("分支的使用");
 
 
     }
