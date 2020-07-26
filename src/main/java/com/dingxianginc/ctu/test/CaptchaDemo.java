@@ -17,6 +17,7 @@ import com.dingxianginc.ctucommon.client.model.CaptchaResponse;
 public class CaptchaDemo {
 
     public static void main(String[] args) throws Exception{
+        int num = 10;
         String appId = "appId";
         String appSecret = "appSecret";
         String token = "前端传入的验证码token";
@@ -29,6 +30,7 @@ public class CaptchaDemo {
         System.out.println(response.getCaptchaStatus());
         //确保验证状态是SERVER_SUCCESS，SDK中有容错机制，在网络出现异常的情况会返回通过
         //System.out.println(response.getIp());
+        // 随便写的注释;
         // 验证码服务采集到的客户端ip
         if (response.getResult()) {
             /**token验证通过，继续其他流程**/
